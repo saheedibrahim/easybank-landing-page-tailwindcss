@@ -15,60 +15,51 @@
   </style>
 </head>
 <body>
-  <nav>
-    <div class="flex justify-between px-6  md:mx-20 my-3">
-      <div>
+  <nav class="md:flex md:justify-between items-center md:px-28 px-5 pt-2">
+    <div class="flex justify-between">
+      <span>
         <img src="./images/logo.svg" alt="">
-      </div>
-      <!--div class="hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </div-->
-      <div>    
-        <ul class="hidden gap-x-4 cursor-pointer text-gray-400 px-6 py-b border-3 md:flex" id="menu">
-          <li><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Home</a></li>
-          <li><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">About</a></li>
-          <li><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Contact</a></li>
-          <li><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Blog</a></li>
-          <li><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Careers</a></li>
-        </ul>
-      </div>
-      <div class="cursor-pointer md:hidden" id="burger">
-        <svg class="w-8 h-6" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </div>
-      <div class="hidden md:block">
-        <button class="bg-gradient-to-r from-green-400 to-blue-200 px-6 py-2 text-center text-white rounded-full">Request Invite</button>
-      </div>
+      </span>
+      <span>
+        <ion-icon name="menu-outline" onclick="Menu(this)" class="text-3xl md:hidden cursor-pointer"></ion-icon>
+      </span>
+    </div>
+    <ul class="absolute md:relative bg-white z-10 hidden md:flex md:mx-0 px-40 md:px-0 border-2 md:border-none mt-4 md:mt-0 md:gap-x-4 cursor-pointer text-gray-400 text-center" id="menu">
+      <li class="py-5 md:pb-0 md:pt-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Home</a></li>
+      <li class="pb-5 md:pb-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">About</a></li>
+      <li class="pb-5 md:pb-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Contact</a></li>
+      <li class="pb-5 md:pb-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Blog</a></li>
+       <li class="pb-5 md:pb-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Careers</a></li>
+    </ul>
+    <div class="md:block hidden">
+      <button class="bg-gradient-to-r from-green-400 to-blue-200 px-6 py-2 text-center text-white rounded-full">Request Invite</button>
     </div>
   </nav>
   <section>
-    <div class="md:relative bg-gray-50 bg-[url('./images/bg-intro-mobile.svg')] bg-right-top md:bg-[url('./images/bg-intro-desktop.svg')] bg-no-repeat md:bg-[right_-500px]">     
+    <div class="px-10 md:px-28 md:relative bg-gray-50 bg-[url('../images/bg-intro-mobile.svg')] bg-444  md:bg-[url('../images/bg-intro-desktop.svg')] bg-no-repeat md:bg-555">     
       <div class="md:absolute right-0 top-0 md:w-full">
         <div class="relative overflow-hidden w-full h-100 md:h-[47.8rem]">
-          <img class="absolute -top-32 md:-right-32 " src="./images/image-mockups.png" alt="">
+          <img class="absolute -top-innerpics md:-top-32 md:-right-32 " src="./images/image-mockups.png" alt="">
         </div>
       </div>
-      <div class="mb-0 pb-0 pt-0 mt-0 md:pt-52 md:pb-52 md:pr-52 ml-20 md:mr-600">
+      <div class="md:py-40 md:mr-600 text-center md:text-justify">
         <h2 class="text-4xl mb-6"> Next generation digital banking</h2>
-        <p class="text-base"> Take your financial life online. Your Easybank account will be a one-stop-shop 
+        <p class="text-base text-gray-400"> Take your financial life online. Your Easybank account will be a one-stop-shop 
           for spending, saving, budgeting, investing, and much more.</p>
-        <div class="mt-10 ">
+        <div class="mt-10 pb-20">
           <button class="bg-gradient-to-r from-green-400 to-blue-200 px-6 py-2 text-center text-white rounded-full">Request Invite</button>
         </div>
       </div>
     </div>
   </section>
   <section>
-    <div class="bg-gray-100 md:pt-20 pt-0 md:pb-20 px-24 text-center md:text-justify">
+    <div class="bg-gray-100 md:pt-6 pt-0 md:pb-20 px-20 md:px-28 text-center md:text-justify">
       <div>
         <h2 class="font-medium text-3xl pt-16 pb-6">Why choose Easybank?</h2>
-        <p class="pb-4">We leverage Open Banking to turn your bank account into your financial hub. <br>Control 
+        <p class="pb-4 text-gray-400">We leverage Open Banking to turn your bank account into your financial hub. <br>Control 
           your finances like never before.</p>
       </div>
-      <div class="container  md:flex md:gap-x-4">
+      <div class="md:flex md:gap-x-10">
         <div class="mx-auto px-4">
           <p class="text-center"><img src="./images/icon-online.svg" class="mx-auto px-4 md:ml-0"  alt=""></p>
             <h3 class="my-4 font-semibold text-xl">Online Banking</h3>
@@ -97,7 +88,7 @@
     </div>
   </section>
   <section>
-    <div class="px-8 md:px-24 pt-20 bg-[#FAFAFA]">
+    <div class="px-10 md:px-28 pt-20 bg-[#FAFAFA]">
       <h2 class="pt-6 pb-4 font-light text-3xl"> Latest Articles</h2>
       <div>
         <div class="gap-x-6 md:flex">
@@ -145,8 +136,8 @@
   </section>
   
   <footer>
-    <div class="md:flex md:justify-between py-12 px-20 bg-[#2D314E] text-white text-center md:text-justify">
-      <div class="mx-auto px-24 md:mx-0 md:px-0">
+    <div class="md:flex md:justify-between py-12 md:px-32 bg-[#2D314E] text-white text-center md:text-justify">
+      <div class="mx-auto px-40 md:mx-0 md:px-0">
         <div>
           <img src="./images/logo.svg" class="pb-8 " alt="">
         </div>
@@ -188,7 +179,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>
   </div>-->
-
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./index.js"></script>
 </body>
 </html>
