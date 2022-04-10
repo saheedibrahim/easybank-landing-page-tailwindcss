@@ -1,12 +1,16 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
+    backgroundSize: {
+      filler: '520rem'
+    },
     extend: {
       padding: {
         '22': '5.5rem'
       },
       spacing: {
-        'innerpics': '10.6rem'
+        'innerpics': '10.6rem',
+        'innerpicsm': '8rem'
       },
       color:{
         footer: '#2D314E',
@@ -19,7 +23,7 @@ module.exports = {
       
     backgroundPosition: {
       '555': 'right -400px top -300px',
-      '444': 'right -100px'
+      '444': 'right -50px'
     },
       borderWidth: {
         '3': '3px',

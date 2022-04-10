@@ -484,8 +484,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
-.-top-innerpics {
-  top: -10.6rem;
+.-top-innerpicsm {
+  top: -8rem;
 }
 
 .top-24 {
@@ -530,8 +530,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-100 {
-  height: 30rem;
+.h-80 {
+  height: 20rem;
 }
 
 .h-44 {
@@ -623,8 +623,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #bfdbfe;
 }
 
+.bg-filler {
+  background-size: 520rem;
+}
+
 .bg-444 {
-  background-position: right -100px;
+  background-position: right -50px;
 }
 
 .bg-no-repeat {
