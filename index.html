@@ -15,31 +15,32 @@
   </style>
 </head>
 <body>
-  <nav class="md:flex md:justify-between items-center md:px-28 px-5 pt-2">
-    <div class="flex justify-between">
-      <span>
-        <img src="./images/logo.svg" alt="">
-      </span>
-      <span>
-        <ion-icon name="menu-outline" onclick="Menu(this)" class="text-3xl md:hidden cursor-pointer"></ion-icon>
-      </span>
-    </div>
-    <ul class="absolute md:relative bg-white z-10 hidden md:flex md:mx-0 px-40 md:px-0 border-2 md:border-none mt-4 md:mt-0 md:gap-x-4 cursor-pointer text-gray-400 text-center" id="menu">
-      <li class="py-5 md:pb-0 md:pt-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Home</a></li>
-      <li class="pb-5 md:pb-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">About</a></li>
-      <li class="pb-5 md:pb-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Contact</a></li>
-      <li class="pb-5 md:pb-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Blog</a></li>
-       <li class="pb-5 md:pb-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Careers</a></li>
-    </ul>
-    <div class="md:block hidden">
-      <button class="bg-gradient-to-r from-green-400 to-blue-200 px-6 py-2 text-center text-white rounded-full">Request Invite</button>
-    </div>
+  <nav class="md:flex md:justify-between items-center md:px-28 md:py-2 px-5 pt-2">
+      <div class="flex justify-between">
+        <span>
+          <img src="./images/logo.svg" alt="">
+        </span>
+        <span>
+          <ion-icon name="menu-outline" onclick="Menu(this)" class="text-3xl md:hidden cursor-pointer"></ion-icon>
+        </span>
+      </div>
+      <ul class="absolute md:relative bg-white z-10 hidden md:flex md:mx-0 px-40 md:px-0 border-2 md:border-none mt-4 md:mt-0 md:gap-x-4 cursor-pointer text-gray-400 text-center" id="menu">
+        <li class="py-5 md:pb-0 md:pt-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Home</a></li>
+        <li class="pb-5 md:pb-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">About</a></li>
+        <li class="pb-5 md:pb-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Contact</a></li>
+        <li class="pb-5 md:pb-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Blog</a></li>
+         <li class="pb-5 md:pb-0"><a class="hover:text-black pb-4 hover:border-b-3 border-green-500">Careers</a></li>
+      </ul>
+      <div class="md:block hidden">
+        <button class="bg-gradient-to-r from-green-400 to-blue-200 px-6 py-2 text-center text-white rounded-full">Request Invite</button>
+      </div>
+    
   </nav>
-  <section>
-    <div class="px-10 md:px-28 md:relative bg-gray-50 bg-[url('../images/bg-intro-mobile.svg')] bg-444  md:bg-[url('../images/bg-intro-desktop.svg')] bg-no-repeat md:bg-555">     
+  <section class="relative">
+    <div  class="px-10 md:px-28 md:relative bg-gray-50 bg-[url('../images/bg-intro-mobile.svg')] bg-444  md:bg-[url('../images/bg-intro-desktop.svg')] bg-no-repeat md:bg-555">     
       <div class="md:absolute right-0 top-0 md:w-full">
         <div class="relative overflow-hidden w-full h-80 md:h-[47.8rem]">
-          <img class="absolute -top-innerpicsm bg-filler md:-top-32 md:-right-32 " src="./images/image-mockups.png" alt="">
+          <img class="absolute -top-innerpicsm bg-filler md:-top-32 md:-right-32" id="overlaying" src="./images/image-mockups.png" alt="">
         </div>
       </div>
       <div class="md:py-40 md:mr-600 text-center md:text-justify">

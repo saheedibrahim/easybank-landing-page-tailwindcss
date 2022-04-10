@@ -614,6 +614,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('../images/bg-intro-mobile.svg');
 }
 
+.bg-\[url\(\'\.\.\/images\/image-mockups\.png\'\)\] {
+  background-image: url('../images/image-mockups.png');
+}
+
+.bg-\[url\(\'bg-intro-mobile\.svg\'\)\] {
+  background-image: url('bg-intro-mobile.svg');
+}
+
+.bg-\[url\(\'\/images\/bg-intro-mobile\.svg\'\)\] {
+  background-image: url('/images/bg-intro-mobile.svg');
+}
+
 .from-green-400 {
   --tw-gradient-from: #4ade80;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(74 222 128 / 0));
@@ -785,6 +797,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.mix-blend-overlay {
+  mix-blend-mode: overlay;
+}
+
 .hover\:border-b-3:hover {
   border-bottom-width: 3px;
 }
@@ -900,6 +916,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .md\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .md\:pb-0 {
