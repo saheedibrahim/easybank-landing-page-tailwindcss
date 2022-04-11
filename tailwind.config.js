@@ -2,7 +2,7 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     backgroundSize: {
-      filler: '520rem'
+      filler: '28rem'
     },
     extend: {
       padding: {
@@ -23,7 +23,7 @@ module.exports = {
       
     backgroundPosition: {
       '555': 'right -400px top -300px',
-      '444': 'right -50px'
+      '444': 'right 0 top -120px'
     },
       borderWidth: {
         '3': '3px',

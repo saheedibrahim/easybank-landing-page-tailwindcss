@@ -12,5 +12,5 @@
 function Menu(e){
     let list = document.querySelector('ul')
     let overlaying = document.querySelector('#overlaying')
-    e.name === 'menu-outline' ? (e.name = 'close-outline', list.classList.remove('top-24'), list.classList.remove('hidden'), overlaying.classList.remove('./images/image-mockups.png')) : (e.name = 'menu-outline', list.classList.add('top-24'), list.classList.add('hidden'), overlaying.classList.add('bg-gradient-to-r from-green-400 to-blue-200'))
+    e.name === 'menu-outline' ? (e.name = 'close-outline', list.classList.remove('top-24'), list.classList.remove('hidden'), overlaying.classList.remove('hidden')) : (e.name = 'menu-outline', list.classList.add('top-24'), list.classList.add('hidden'), overlaying.classList.add('hidden'))
 }
